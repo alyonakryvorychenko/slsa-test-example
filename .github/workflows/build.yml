@@ -44,7 +44,7 @@ jobs:
         uses: scribe-security/actions/gensbom/bom@master
         with:
           type: docker            
-          target: date:latest
+          target: mongo-express:latest
           format: json
           verbose: 2
           force: true
@@ -61,7 +61,7 @@ jobs:
         uses: scribe-security/actions/gensbom/bom@master
         with:
           type: docker
-          target: 'date:latest'
+          target: mongo-express:latest
           format: statement-slsa
 #           product-key: ${{ secrets.SCRIBE_DEV_PRODUCT_KEY }}
           verbose: 2
